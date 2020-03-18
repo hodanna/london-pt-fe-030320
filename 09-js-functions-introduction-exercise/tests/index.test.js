@@ -5,6 +5,8 @@
  * assign your favorite animal
  */
 
+const myFavoriteAnimal = "Dog";
+
 /**
  * Exercise 2
  *
@@ -12,6 +14,13 @@
  * console.log with the message "My favorite animal is `myFavoriteAnimal`"
  * Check developer tools in your browser for the message
  */
+
+function myAnimalWithLog() {
+    console.log (`My favorite animal is ${myFavoriteAnimal}`);
+}
+
+myAnimalWithLog ();
+
 
 /**
  * Exercise 3
@@ -22,6 +31,13 @@
  * and see the difference with console.log
  */
 
+function myAnimalWithWarn() {
+    global.console.warn(`My favorite animal is ${myFavoriteAnimal}`);
+     
+ }
+
+myAnimalWithWarn ();
+
 /**
  * Exercise 4
  *
@@ -31,6 +47,13 @@
  * and see the difference with console.log
  */
 
+
+function myAnimalWithError() {
+    console.error ("My favorite animal is " + myFavoriteAnimal);
+}
+
+myAnimalWithError ();
+
 /**
  * Exercise 5
  * create a function "myCity", which will have
@@ -38,11 +61,21 @@
  *
  */
 
+function myCity() {
+    alert("My favorite city is London");
+}
+
+myCity();
 global.console = {
 	log: jest.fn(),
 	info: jest.fn(),
-	error: jest.fn()
+	error: jest.fn(),
+	warn: jest.fn(),
+	alert: jest.fn()
 };
+
+global.alert = jest.fn();
+
 
 // Exercise 1
 describe("myFavoriteAnimal", () => {
