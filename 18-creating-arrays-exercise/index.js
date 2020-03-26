@@ -5,6 +5,7 @@
  * 'panda' and 'giraffe' into it as strings
  */
 
+ const wildAnimals = ["tiger","rabbit", "panda", "giraffe"];
 
 /**
  * Exercise 2
@@ -12,7 +13,7 @@
  * Create a variable "pets" and and 'cat', 'dog' and 'hamster'
  * into it as strings(must contains dog)
  */
-
+ const pets = ["cat", "dog", "hamster"];
 
 /**
  * Exercise 3
@@ -20,6 +21,9 @@
  * Create a variable "animals". It should include all wildAnimals
  * and all pets. Find the way to concatenate your arrays with JS
  */
+
+
+const animals = wildAnimals.concat(pets);
 
 
 /**
@@ -30,6 +34,13 @@
  */
 
 
+ const dogIndex = animals.findIndex(animals => animals === "dog");
+
+ console.log(dogIndex);
+
+
+
+
 /**
  * Exercise 5
  *
@@ -37,6 +48,7 @@
  * find panda index in "animals" array
  */
 
+ const pandaIndex = animals.indexOf ("panda");
 
 /**
  * create a variable with name "numbers"  which will be an array
@@ -44,6 +56,7 @@
  * (each number should be twice in this array).
  */
 
+ const numbers = [1,2,3,4,5,6,7,8,9,9,8,7,6,5,4,3,2,1]
 
 /**
  * Exercise 6
@@ -51,6 +64,8 @@
  * Create variable "first4DigitIndex" and from "numbers"
  * find index of first instance of digit 4
  */
+
+ first4DigitIndex = numbers.findIndex(numbers => numbers === 4);
 
 
 /**
@@ -60,6 +75,8 @@
  * find index of last instance of digit 4
  */
 
+const last4DigitIndex = numbers.lastIndexOf(4);
+console.log(last4DigitIndex);
 
 /**
  * Exercise 8
@@ -68,7 +85,7 @@
  * contains 7
  */
 
-
+const hasSeven = numbers.includes(7);
 /**
  * Exercise 9
  *
@@ -76,6 +93,7 @@
  * contains 20
  */
 
+ const hasTwenty = numbers.includes(20);
 
 /**
  * Exercise 10
@@ -83,6 +101,8 @@
  * Create variable "moreThanFour" returns first number
  * "numbers" that are more than 4
  */
+
+const moreThanFour =numbers.find(numbers => numbers > 4);
 
 
 /**
@@ -92,3 +112,4 @@
  * number form "numbers" that are more than 7
  */
 
+const moreThanSevenIndex = numbers.findIndex(numbers => numbers > 7);
