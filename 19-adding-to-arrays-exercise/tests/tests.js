@@ -11,6 +11,8 @@ describe("'dog' is the last element in animals", () => {
 	});
 });
 
+
+
 // Exercise 2
 describe("'rabbit' is the first element in animals", () => {
 	test("'rabbit' should be the first in animals", () => {
