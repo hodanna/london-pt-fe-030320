@@ -58,4 +58,4 @@ console.log(user)
 
 
 createMovieObject("Venom", 4, 20);
-console.log(createMovieObject
+console.log(createMovieObject)
